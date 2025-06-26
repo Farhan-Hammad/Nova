@@ -1,0 +1,190 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+@keyframes on-scroll-up {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes on-scroll-left {
+  0% {
+    opacity: 0;
+    transform: translatex(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes on-scroll-right {
+  0% {
+    opacity: 0;
+    transform: translatex(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes on-scroll-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes hero-box {
+  0%{
+    opacity: 0;
+    transform: translatex(-400px);
+  }
+  100%{
+    opacity: 1;
+    transform: translatex(0%);
+  }
+  
+}
+.navbar-brand {
+  font-size: 35px;
+  animation: on-scroll-right 1s ease;
+}
+nav {
+  background-color: #17283b98;
+  max-height: 60px;
+  backdrop-filter: blur(10px);
+}
+.nav-hover {
+  color: #c4c4c4 !important;
+  transition: all 0.3s ease !important;
+}
+.nav-hover:hover {
+  color: #5797db !important;
+}
+.vertical-line {
+  width: 5px;
+  height: 70%;
+  background-color: #56b8e6;
+  margin-right: 20px;
+}
+.blue-buttons {
+  background-color: #5797db;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.blue-buttons:hover {
+  background-color: #56b8e6;
+}
+.hover-white {
+  svg {
+    transition: all 0.3s ease;
+  }
+}
+.hover-white:hover {
+  svg {
+    fill: #fff;
+  }
+}
+.hero-box {
+  background-color: #17283b;
+  height: 100% !important;
+}
+section {
+  width: 100%;
+}
+.blue-line {
+  height: 4px;
+  width: 5rem;
+  background-color: #56b8e6;
+}
+.box-hover {
+  .text-blue-hover {
+    transition: all 0.3s ease;
+  }
+}
+.box-hover:hover {
+  .text-blue-hover {
+    color: #5797db;
+  }
+}
+
+main .five {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  background-image: url(img/cta-bg.jpg);
+  background-color: #a7a7a7;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-blend-mode: darken;
+  h1 {
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    font-size: 2rem;
+    animation: fade linear both;
+  }
+  p {
+    width: 80%;
+    text-align: center;
+    color: rgb(243, 243, 243);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+    animation: fade linear both;
+  }
+  .cal-to-action {
+    padding: 1rem 40px;
+    font-size: 1.5rem;
+    background-color: #56b8e6;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    animation: fade linear both;
+  }
+
+  .cal-to-action:hover {
+    background-color: #60cdff;
+  }
+}
+.link-footer {
+  background-color: #56b8e6;
+  transition: all 0.3s ease;
+}
+.link-footer:hover {
+  background-color: #2a97ca;
+}
+
+@media screen and (width < 1000px) {
+  .iphone {
+    display: block;
+    position: inherit;
+    left: 60%;
+    height: 400px;
+    width: 200px;
+    img {
+      height: 400px;
+      width: 200px;
+    }
+  }
+}
+@media screen and (width < 768px) {
+  main .hero .hero-box {
+    background-color: transparent;
+  }
+  .iphone {
+    display: none;
+  }
+}
